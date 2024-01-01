@@ -5,7 +5,7 @@ function App() {
   return (
     <div className="App">
       <h2> Welcome to my app</h2>
-      <LoginForm />
+      <LoginForm submitFn={values => alert(JSON.stringify(values))}/>
     </div>
   );
 }
